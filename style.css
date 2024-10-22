@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.scrolling {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(/img/bg-barbie.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.scrolling img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 30%;
+    pointer-events: none;
+}
+
+.scrolling img#w-right {
+    position: fixed;
+    transform: translateX(1000px);
+}
+
+.cont {
+    position: relative;
+    padding: 50px;
+    background-color: black;
+}
+
+p{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    color: wheat;
+}
